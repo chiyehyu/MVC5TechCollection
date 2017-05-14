@@ -1,0 +1,30 @@
+﻿@* 盡量把RazorView當成沒有Razor，會越接近Html，更接近View的本質  *@
+
+@model int[]
+@*@{
+    ViewBag.Title = "RazorTest";
+    Layout = ""; //變成部份檢視
+    ViewBag.Text1 = "<strong style='color: red;'>";
+    ViewBag.Text2 = "</strong>";
+}*@
+@*@Html.Raw(ViewBag.Text1)*@
+@foreach (var i in @Model)
+{
+    @i
+}
+
+
+@foreach (var i in @Model)
+{
+    @(i+" ")  
+}
+
+ 
+<ul>
+    @foreach (var i in @Model)
+    {
+        <li>@i</li>
+    }
+</ul>
+@*@Html.Raw(ViewBag.Text2)*@
+
