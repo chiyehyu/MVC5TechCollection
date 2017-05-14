@@ -32,7 +32,7 @@ namespace MVC5Course.Controllers
             //ViewBag.Message = "Your application description page.";
 
             //故意發生例外
-            throw new ArgumentException("Error not Handled!");
+            //throw new ArgumentException("Error not Handled!");
 
             return View();
 

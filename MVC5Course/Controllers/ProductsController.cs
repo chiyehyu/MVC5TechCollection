@@ -92,8 +92,8 @@ namespace MVC5Course.Controllers
         [HandleError(ExceptionType = typeof(DbEntityValidationException), View = "Error_DbEntityValidationException")]
         public ActionResult Create([Bind(Include = "ProductId,ProductName,Price,Active,Stock")] Product product)
         {
-            //if (ModelState.IsValid)
-            if (true)
+            if (ModelState.IsValid)
+            //if (true) //故意產生DbEntityValidationException
             {
                 //sol1
                 /*
