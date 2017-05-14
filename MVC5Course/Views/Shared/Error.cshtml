@@ -1,0 +1,15 @@
+﻿@model System.Web.Mvc.HandleErrorInfo
+
+@{
+    ViewBag.Title = "Error";
+    var ex = @Model.Exception as System.ArgumentException;
+}
+
+<h1 class="text-danger">/@Model.ControllerName/@Model.ActionName error!</h1>
+@*<h2 class="text-danger">@Model.Exception.Message</h2>*@
+
+<h2 class="text-danger">@ex.Message</h2>
+<h4 class="text-danger">@Model.Exception.ToString()</h4>
+
+
+

@@ -1,0 +1,61 @@
+﻿@model IEnumerable<MVC5Course.Models.ViewModels.ProductLiteVM>
+
+@{
+    ViewBag.Title = "ListProducts";
+}
+
+<h2>ListProducts</h2>
+
+@*用最簡單的方法進行post/get, get發出時會代換網址加入querystring,post不會*@
+<form method="post">
+    @Html.TextBox("q") 
+
+    庫存範圍
+    @Html.TextBox("s1") ~ @Html.TextBox("s2")
+
+    <input type="submit" value="搜尋"/>
+</form>
+
+
+@using (Html.BeginForm("BatchCreate"))
+{
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.ProductId)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ProductName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Price)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Stock)
+        </th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.ProductId)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ProductName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Price)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Stock)
+        </td>
+    </tr>
+}
+
+</table>
+
+}
