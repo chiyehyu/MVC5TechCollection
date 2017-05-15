@@ -182,12 +182,14 @@
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\BaseController.cs" />
+    <Compile Include="Controllers\ClientsController.cs" />
     <Compile Include="Controllers\EFController.cs" />
     <Compile Include="Controllers\HelloController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="ActionFilter\LocalOnlyAttribute.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Controllers\MetroController.cs" />
+    <Compile Include="Controllers\OrdersController.cs" />
     <Compile Include="Controllers\ProductsController.cs" />
     <Compile Include="ActionFilter\SharedViewBagAttribute.cs" />
     <Compile Include="Global.asax.cs">
@@ -305,6 +307,9 @@
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
     <Content Include="Content\MixedWf.aspx" />
+    <Content Include="js\excanvas.min.js">
+      <DependentUpon>excanvas.js</DependentUpon>
+    </Content>
     <Content Include="LayoutTemplate\calendar.html" />
     <Content Include="LayoutTemplate\chart.html" />
     <Content Include="css\bootstrap-responsive.css" />
@@ -512,6 +517,9 @@
     <Content Include="img\glyphicons_halflings-white.svg" />
     <Content Include="img\glyphicons_halflings.svg" />
     <Content Include="LayoutTemplate\README.md" />
+    <Content Include="js\excanvas.min.js.map">
+      <DependentUpon>excanvas.min.js</DependentUpon>
+    </Content>
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <None Include="Scripts\jquery-3.1.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.1.1.js" />
@@ -589,6 +597,16 @@
     <Content Include="Views\Metro\_ViewStart.cshtml" />
     <Content Include="Views\Metro\_Layout.cshtml" />
     <Content Include="Views\Metro\Task.cshtml" />
+    <Content Include="Views\Clients\Create.cshtml" />
+    <Content Include="Views\Clients\Delete.cshtml" />
+    <Content Include="Views\Clients\Details.cshtml" />
+    <Content Include="Views\Clients\Edit.cshtml" />
+    <Content Include="Views\Clients\Index.cshtml" />
+    <Content Include="Views\Orders\Create.cshtml" />
+    <Content Include="Views\Orders\Delete.cshtml" />
+    <Content Include="Views\Orders\Details.cshtml" />
+    <Content Include="Views\Orders\Edit.cshtml" />
+    <Content Include="Views\Orders\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />

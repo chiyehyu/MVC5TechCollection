@@ -207,3 +207,4 @@ C:\DotNetCode\MVCTechCollection\MVC5Course\bin\zh-Hant\Microsoft.Owin.Host.Syste
 C:\DotNetCode\MVCTechCollection\MVC5Course\bin\zh-Hant\Microsoft.Owin.Security.Facebook.resources.dll
 C:\DotNetCode\MVCTechCollection\MVC5Course\obj\Debug\MVC5Course.dll
 C:\DotNetCode\MVCTechCollection\MVC5Course\obj\Debug\MVC5Course.pdb
+C:\DotNetCode\MVCTechCollection\MVC5Course\obj\Debug\MVC5Course.csprojResolveAssemblyReference.cache
